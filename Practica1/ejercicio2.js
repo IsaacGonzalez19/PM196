@@ -3,7 +3,6 @@
 /*Convierte esta función tradicional a una arrow function que haga exactamente lo
 mismo:
 */
-
 //Esta function tiene la función de calcular el area de un cuadrado L x L
 /*
 function cuadrado(numero) {
