@@ -2,13 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
 const Texto = (props) =>{
-    const {contenido} = props;
+    const {children} = props;
     return(
-      <Text>{contenido}</Text>
+      <Text>{childre}</Text>
   )
 }
 
-
+//2. Main
 export default function App() {
   return (
 
