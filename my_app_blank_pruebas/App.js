@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
+//En este apartado se encuentra declarada el StyleSheet, es una funcion basica que proviene de React Native,
 import { StyleSheet, Text, View, Button } from 'react-native';
 import React, {useState} from "react";
 
 
-const Texto = () =>{
+const Texto = ({style}) =>{
     const [contenido, setcontenido] = useState('Hola Mundo');
     const actualizatexto = () => {setcontenido('State Modificado')}
     return(
-      <Text onPress={actualizatexto} >{contenido} </Text>
+      <Text style={[styles.text, style]} onPress={actualizatexto} >{contenido} </Text>
   )
 }
 
@@ -31,9 +32,9 @@ export default function App() {
 
     <View style={styles.container}>
         <StatusBar style="auto" />
-            <Texto> </Texto>
-            <Texto> </Texto>
-            <Texto></Texto>
+            <Texto style={styles.verde}> </Texto>
+            <Texto style={styles.amarillo}> </Texto>
+            <Texto style={styles.blue}></Texto>
 
       <Button title={contenidoButon} onPress={actualizacontButton}> </Button>
 
@@ -41,11 +42,27 @@ export default function App() {
   );
 }
 
+//¿Por que existe?
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+    alignItems: 'stretch',
     justifyContent: 'center',
+    flexDirection: 'column',
   },
+  text: {
+      color:'black',
+      fontSize: 27,
+      width:100,
+      height:100
+
+  },
+
+    verde:{backgroundColor:'green', },
+    amarillo:{backgroundColor:'yellow', },
+    blue:{backgroundColor:'blue', }
+
+
 });
