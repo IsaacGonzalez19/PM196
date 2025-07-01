@@ -47,7 +47,7 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 6000);
   }, []);
 
   if (loading) {
@@ -117,12 +117,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
+  /*
   overlay: {
     backgroundColor: 'rgba(0,0,0,0.5)',
     padding: 20,
     borderRadius: 10,
     alignSelf: 'center',
-  },
+  },*/
   text: {
     color: 'white',
     fontSize: 24,
