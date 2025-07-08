@@ -17,7 +17,7 @@ import {
   StatusBar
 } from 'react-native';
 
-// Configuración de la API de TMDB
+
 const TMDB_API_KEY = 'c48b534753847572879d97e2fb6f318d';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
